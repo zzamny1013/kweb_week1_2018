@@ -9,7 +9,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('1+1= '+ cal1.add(1,1) + '\n' +
+  res.end('1+1= ${cal1.add(1,1)}\n' +
           '2-10= ${cal2.sub(2,10)}\n' +
           '3*7= ${cal3.mul(3,7)}');
 });
